@@ -8,8 +8,6 @@
 import SwiftUI
 import SwiftUICharts
 
-let coffeeRatio = 16
-
 let contacts = [
     Contact(name: "Marvin", jobTitle: "Paranoid Android", phone: "+1-200-8261-0817"),
     Contact(name: "Arthur Dent", jobTitle: "BBC Radio employee", phone: "+1-200-1234-5678"),
@@ -23,33 +21,70 @@ struct Contact {
     var phone:String
 }
 
+func roundIt(x: Double) -> Double {
+    return Double((x*10.0).rounded()/(10.0))
+}
+
 struct ContentView: View {
     @State var servingSize: Double = 400
     @State var acidity: Double = 0.5
-    @State var pourOne: Double = 60
-    
+    @State var coffeeRatio: Double = 16.0
     var body: some View {
-    VStack{
-            Text("Serving Size:\(Int(servingSize))mL")
-            Text("Recommended Coffee Dosage: \(Int(servingSize)/coffeeRatio)g")
-            Slider(value: $servingSize, in: 100...800, step:25)
-            Slider(value: $pourOne, in:10...500, step:20)
-            Text("Adjust acidity")
-            Slider(value: $acidity, in: 0.2...1.8, step:0.1)
-            HStack{
-                BarView(value: CGFloat(servingSize/5 * 0.25), maxHeight:500)
-                BarView(value:CGFloat(servingSize/5 * 0.75), maxHeight:500)
-                BarView(value:CGFloat(pourOne), maxHeight:500)
+        VStack {
+            //Text("Tetsu Kasuya 4:6")
+             //   .font(.largeTitle)
+              //  .padding(5)
+            VStack{
+                Text("\(roundIt(x: servingSize/coffeeRatio).description)g")
+                    .font(.largeTitle)
+                    .foregroundColor(.blue)
+                Text("Recommended coffee dosage")
+            }.padding(10)
+            VStack{
+                HStack {
+                    BarView(value: CGFloat(servingSize/5 * acidity), label:"1")
+                    BarView(value: CGFloat(servingSize/5 * (2-acidity)), label:"2")
+                    BarView(value: CGFloat(servingSize/5), label:"3")
+                    BarView(value: CGFloat(servingSize/5), label:"4")
+                    BarView(value: CGFloat(servingSize/5), label:"5")
+                    }
+                Text("mL per pour")
             }
-//        BarChartView(data: ChartData(values: chartData), title: "Kasuya Water Distribution", legend: "mL") // legend is optional
-            NavigationView{
-                List(contacts, id: \.name) { contact in
-                    NavigationLink(destination: ContactDetail(contact: contact)) {
-                        ContactRow(contact: contact)
+            VStack{
+                HStack {
+                    BarView(value: CGFloat(servingSize/5 * acidity), maxHeight:200, label:"1", scalar:0.1)
+                    BarView(value: CGFloat(servingSize/5 * 2), maxHeight:200, label:"2", scalar:0.1)
+                    BarView(value: CGFloat(servingSize/5 * 3), maxHeight:200, label:"3", scalar:0.1)
+                    BarView(value: CGFloat(servingSize/5 * 4), maxHeight:200, label:"4", scalar: 0.1)
+                    BarView(value: CGFloat(servingSize/5 * 5), maxHeight:200, label:"5", scalar: 0.1)
+                }
+                Text("Total mL")
+            }
+            // USER INPUT
+            VStack{
+                Text("Serving Size")
+                HStack {
+                    Slider(value: $servingSize, in: 100...800, step:25)
+                    Text("\(Int(servingSize))mL")
+                    }
+                //Spacer().frame(height:10)
+                Text("Water-coffee ratio")
+                HStack {
+                    Slider(value: $coffeeRatio, in: 14...20, step:0.5)
+                    Text("\(roundIt(x: coffeeRatio).description):1")
+                }
+                //Spacer().frame(height:10)
+                //Spacer().frame(height:10)
+                VStack{
+                    Text("Acidity")
+                    HStack {
+                        Slider(value: $acidity, in: 0.2...1.8, step:0.1)
+                        Text("\(roundIt(x: acidity).description):1")
                     }
                 }
-                .navigationBarTitle(Text("Contacts!"))
+
             }
+            Spacer().frame(height:40)
         }
     }
 }
