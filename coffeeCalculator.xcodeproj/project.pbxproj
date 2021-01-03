@@ -3,16 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F630CF0A259D1D9000493322 /* Food_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F630CF09259D1D9000493322 /* Food_TrackerApp.swift */; };
+		F630CF0A259D1D9000493322 /* coffeeCalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F630CF09259D1D9000493322 /* coffeeCalculatorApp.swift */; };
 		F630CF0C259D1D9000493322 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F630CF0B259D1D9000493322 /* ContentView.swift */; };
 		F630CF0E259D1D9000493322 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F630CF0D259D1D9000493322 /* Assets.xcassets */; };
 		F630CF11259D1D9000493322 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F630CF10259D1D9000493322 /* Preview Assets.xcassets */; };
-		F630CF1C259D1D9000493322 /* Food_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F630CF1B259D1D9000493322 /* Food_TrackerTests.swift */; };
-		F630CF27259D1D9000493322 /* Food_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F630CF26259D1D9000493322 /* Food_TrackerUITests.swift */; };
+		F630CF1C259D1D9000493322 /* coffeeCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F630CF1B259D1D9000493322 /* coffeeCalculatorTests.swift */; };
+		F630CF27259D1D9000493322 /* coffeeCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F630CF26259D1D9000493322 /* coffeeCalculatorUITests.swift */; };
+		F630CF3D259E914E00493322 /* ContactRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F630CF3C259E914E00493322 /* ContactRow.swift */; };
+		F630CF4D259E956900493322 /* ContactDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F630CF4C259E956900493322 /* ContactDetail.swift */; };
+		F630CF5225A0E78500493322 /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F630CF5125A0E78500493322 /* BarView.swift */; };
+		F630CF6025A10AC200493322 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = F630CF5F25A10AC200493322 /* SwiftUICharts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,18 +37,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F630CF06259D1D8F00493322 /* Food Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Food Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F630CF09259D1D9000493322 /* Food_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food_TrackerApp.swift; sourceTree = "<group>"; };
+		F630CF06259D1D8F00493322 /* coffeeCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coffeeCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F630CF09259D1D9000493322 /* coffeeCalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coffeeCalculatorApp.swift; sourceTree = "<group>"; };
 		F630CF0B259D1D9000493322 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F630CF0D259D1D9000493322 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F630CF10259D1D9000493322 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F630CF12259D1D9000493322 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F630CF17259D1D9000493322 /* Food TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Food TrackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F630CF1B259D1D9000493322 /* Food_TrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food_TrackerTests.swift; sourceTree = "<group>"; };
+		F630CF17259D1D9000493322 /* coffeeCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = coffeeCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F630CF1B259D1D9000493322 /* coffeeCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coffeeCalculatorTests.swift; sourceTree = "<group>"; };
 		F630CF1D259D1D9000493322 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F630CF22259D1D9000493322 /* Food TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Food TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F630CF26259D1D9000493322 /* Food_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food_TrackerUITests.swift; sourceTree = "<group>"; };
+		F630CF22259D1D9000493322 /* coffeeCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = coffeeCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F630CF26259D1D9000493322 /* coffeeCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coffeeCalculatorUITests.swift; sourceTree = "<group>"; };
 		F630CF28259D1D9000493322 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F630CF3C259E914E00493322 /* ContactRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRow.swift; sourceTree = "<group>"; };
+		F630CF4C259E956900493322 /* ContactDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetail.swift; sourceTree = "<group>"; };
+		F630CF5125A0E78500493322 /* BarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F630CF6025A10AC200493322 /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,9 +83,10 @@
 		F630CEFD259D1D8F00493322 = {
 			isa = PBXGroup;
 			children = (
-				F630CF08259D1D8F00493322 /* Food Tracker */,
-				F630CF1A259D1D9000493322 /* Food TrackerTests */,
-				F630CF25259D1D9000493322 /* Food TrackerUITests */,
+				F630CF5125A0E78500493322 /* BarView.swift */,
+				F630CF08259D1D8F00493322 /* coffeeCalculator */,
+				F630CF1A259D1D9000493322 /* coffeeCalculatorTests */,
+				F630CF25259D1D9000493322 /* coffeeCalculatorUITests */,
 				F630CF07259D1D8F00493322 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,23 +94,25 @@
 		F630CF07259D1D8F00493322 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F630CF06259D1D8F00493322 /* Food Tracker.app */,
-				F630CF17259D1D9000493322 /* Food TrackerTests.xctest */,
-				F630CF22259D1D9000493322 /* Food TrackerUITests.xctest */,
+				F630CF06259D1D8F00493322 /* coffeeCalculator.app */,
+				F630CF17259D1D9000493322 /* coffeeCalculatorTests.xctest */,
+				F630CF22259D1D9000493322 /* coffeeCalculatorUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F630CF08259D1D8F00493322 /* Food Tracker */ = {
+		F630CF08259D1D8F00493322 /* coffeeCalculator */ = {
 			isa = PBXGroup;
 			children = (
-				F630CF09259D1D9000493322 /* Food_TrackerApp.swift */,
+				F630CF09259D1D9000493322 /* coffeeCalculatorApp.swift */,
 				F630CF0B259D1D9000493322 /* ContentView.swift */,
+				F630CF4C259E956900493322 /* ContactDetail.swift */,
+				F630CF3C259E914E00493322 /* ContactRow.swift */,
 				F630CF0D259D1D9000493322 /* Assets.xcassets */,
 				F630CF12259D1D9000493322 /* Info.plist */,
 				F630CF0F259D1D9000493322 /* Preview Content */,
 			);
-			path = "Food Tracker";
+			path = coffeeCalculator;
 			sourceTree = "<group>";
 		};
 		F630CF0F259D1D9000493322 /* Preview Content */ = {
@@ -112,30 +123,30 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		F630CF1A259D1D9000493322 /* Food TrackerTests */ = {
+		F630CF1A259D1D9000493322 /* coffeeCalculatorTests */ = {
 			isa = PBXGroup;
 			children = (
-				F630CF1B259D1D9000493322 /* Food_TrackerTests.swift */,
+				F630CF1B259D1D9000493322 /* coffeeCalculatorTests.swift */,
 				F630CF1D259D1D9000493322 /* Info.plist */,
 			);
-			path = "Food TrackerTests";
+			path = coffeeCalculatorTests;
 			sourceTree = "<group>";
 		};
-		F630CF25259D1D9000493322 /* Food TrackerUITests */ = {
+		F630CF25259D1D9000493322 /* coffeeCalculatorUITests */ = {
 			isa = PBXGroup;
 			children = (
-				F630CF26259D1D9000493322 /* Food_TrackerUITests.swift */,
+				F630CF26259D1D9000493322 /* coffeeCalculatorUITests.swift */,
 				F630CF28259D1D9000493322 /* Info.plist */,
 			);
-			path = "Food TrackerUITests";
+			path = coffeeCalculatorUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F630CF05259D1D8F00493322 /* Food Tracker */ = {
+		F630CF05259D1D8F00493322 /* coffeeCalculator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F630CF2B259D1D9000493322 /* Build configuration list for PBXNativeTarget "Food Tracker" */;
+			buildConfigurationList = F630CF2B259D1D9000493322 /* Build configuration list for PBXNativeTarget "coffeeCalculator" */;
 			buildPhases = (
 				F630CF02259D1D8F00493322 /* Sources */,
 				F630CF03259D1D8F00493322 /* Frameworks */,
@@ -145,14 +156,17 @@
 			);
 			dependencies = (
 			);
-			name = "Food Tracker";
+			name = coffeeCalculator;
+			packageProductDependencies = (
+				F630CF5F25A10AC200493322 /* SwiftUICharts */,
+			);
 			productName = "Food Tracker";
-			productReference = F630CF06259D1D8F00493322 /* Food Tracker.app */;
+			productReference = F630CF06259D1D8F00493322 /* coffeeCalculator.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F630CF16259D1D9000493322 /* Food TrackerTests */ = {
+		F630CF16259D1D9000493322 /* coffeeCalculatorTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F630CF2E259D1D9000493322 /* Build configuration list for PBXNativeTarget "Food TrackerTests" */;
+			buildConfigurationList = F630CF2E259D1D9000493322 /* Build configuration list for PBXNativeTarget "coffeeCalculatorTests" */;
 			buildPhases = (
 				F630CF13259D1D9000493322 /* Sources */,
 				F630CF14259D1D9000493322 /* Frameworks */,
@@ -163,14 +177,14 @@
 			dependencies = (
 				F630CF19259D1D9000493322 /* PBXTargetDependency */,
 			);
-			name = "Food TrackerTests";
+			name = coffeeCalculatorTests;
 			productName = "Food TrackerTests";
-			productReference = F630CF17259D1D9000493322 /* Food TrackerTests.xctest */;
+			productReference = F630CF17259D1D9000493322 /* coffeeCalculatorTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F630CF21259D1D9000493322 /* Food TrackerUITests */ = {
+		F630CF21259D1D9000493322 /* coffeeCalculatorUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F630CF31259D1D9000493322 /* Build configuration list for PBXNativeTarget "Food TrackerUITests" */;
+			buildConfigurationList = F630CF31259D1D9000493322 /* Build configuration list for PBXNativeTarget "coffeeCalculatorUITests" */;
 			buildPhases = (
 				F630CF1E259D1D9000493322 /* Sources */,
 				F630CF1F259D1D9000493322 /* Frameworks */,
@@ -181,9 +195,9 @@
 			dependencies = (
 				F630CF24259D1D9000493322 /* PBXTargetDependency */,
 			);
-			name = "Food TrackerUITests";
+			name = coffeeCalculatorUITests;
 			productName = "Food TrackerUITests";
-			productReference = F630CF22259D1D9000493322 /* Food TrackerUITests.xctest */;
+			productReference = F630CF22259D1D9000493322 /* coffeeCalculatorUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -208,7 +222,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F630CF01259D1D8F00493322 /* Build configuration list for PBXProject "Food Tracker" */;
+			buildConfigurationList = F630CF01259D1D8F00493322 /* Build configuration list for PBXProject "coffeeCalculator" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -217,13 +231,16 @@
 				Base,
 			);
 			mainGroup = F630CEFD259D1D8F00493322;
+			packageReferences = (
+				F630CF5E25A10AC200493322 /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
 			productRefGroup = F630CF07259D1D8F00493322 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F630CF05259D1D8F00493322 /* Food Tracker */,
-				F630CF16259D1D9000493322 /* Food TrackerTests */,
-				F630CF21259D1D9000493322 /* Food TrackerUITests */,
+				F630CF05259D1D8F00493322 /* coffeeCalculator */,
+				F630CF16259D1D9000493322 /* coffeeCalculatorTests */,
+				F630CF21259D1D9000493322 /* coffeeCalculatorUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -260,7 +277,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F630CF0C259D1D9000493322 /* ContentView.swift in Sources */,
-				F630CF0A259D1D9000493322 /* Food_TrackerApp.swift in Sources */,
+				F630CF4D259E956900493322 /* ContactDetail.swift in Sources */,
+				F630CF0A259D1D9000493322 /* coffeeCalculatorApp.swift in Sources */,
+				F630CF3D259E914E00493322 /* ContactRow.swift in Sources */,
+				F630CF5225A0E78500493322 /* BarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F630CF1C259D1D9000493322 /* Food_TrackerTests.swift in Sources */,
+				F630CF1C259D1D9000493322 /* coffeeCalculatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F630CF27259D1D9000493322 /* Food_TrackerUITests.swift in Sources */,
+				F630CF27259D1D9000493322 /* coffeeCalculatorUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,12 +305,12 @@
 /* Begin PBXTargetDependency section */
 		F630CF19259D1D9000493322 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F630CF05259D1D8F00493322 /* Food Tracker */;
+			target = F630CF05259D1D8F00493322 /* coffeeCalculator */;
 			targetProxy = F630CF18259D1D9000493322 /* PBXContainerItemProxy */;
 		};
 		F630CF24259D1D9000493322 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F630CF05259D1D8F00493322 /* Food Tracker */;
+			target = F630CF05259D1D8F00493322 /* coffeeCalculator */;
 			targetProxy = F630CF23259D1D9000493322 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -418,10 +438,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Food Tracker/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"coffeeCalculator/Preview Content\"";
 				DEVELOPMENT_TEAM = BATM6K45F4;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Food Tracker/Info.plist";
+				INFOPLIST_FILE = coffeeCalculator/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -440,10 +460,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Food Tracker/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"coffeeCalculator/Preview Content\"";
 				DEVELOPMENT_TEAM = BATM6K45F4;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Food Tracker/Info.plist";
+				INFOPLIST_FILE = coffeeCalculator/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -474,7 +494,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Food Tracker.app/Food Tracker";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/coffeeCalculator.app/coffeeCalculator";
 			};
 			name = Debug;
 		};
@@ -496,7 +516,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Food Tracker.app/Food Tracker";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/coffeeCalculator.app/coffeeCalculator";
 			};
 			name = Release;
 		};
@@ -543,7 +563,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F630CF01259D1D8F00493322 /* Build configuration list for PBXProject "Food Tracker" */ = {
+		F630CF01259D1D8F00493322 /* Build configuration list for PBXProject "coffeeCalculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F630CF29259D1D9000493322 /* Debug */,
@@ -552,7 +572,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F630CF2B259D1D9000493322 /* Build configuration list for PBXNativeTarget "Food Tracker" */ = {
+		F630CF2B259D1D9000493322 /* Build configuration list for PBXNativeTarget "coffeeCalculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F630CF2C259D1D9000493322 /* Debug */,
@@ -561,7 +581,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F630CF2E259D1D9000493322 /* Build configuration list for PBXNativeTarget "Food TrackerTests" */ = {
+		F630CF2E259D1D9000493322 /* Build configuration list for PBXNativeTarget "coffeeCalculatorTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F630CF2F259D1D9000493322 /* Debug */,
@@ -570,7 +590,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F630CF31259D1D9000493322 /* Build configuration list for PBXNativeTarget "Food TrackerUITests" */ = {
+		F630CF31259D1D9000493322 /* Build configuration list for PBXNativeTarget "coffeeCalculatorUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F630CF32259D1D9000493322 /* Debug */,
@@ -580,6 +600,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F630CF5E25A10AC200493322 /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F630CF5F25A10AC200493322 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F630CF5E25A10AC200493322 /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F630CEFE259D1D8F00493322 /* Project object */;
 }
