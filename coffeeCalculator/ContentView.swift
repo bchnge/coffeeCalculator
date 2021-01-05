@@ -38,8 +38,46 @@ struct ContentView: View {
                 Text("\(roundIt(x: servingSize/coffeeRatio).description)g")
                     .font(.largeTitle)
                     .foregroundColor(.blue)
-                Text("Recommended coffee dosage")
+                Text("Recommended coffe e dosage")
             }.padding(10)
+            Button(action: {
+                // Prepare URL
+                let url = URL(string: "http://192.168.50.81:5000/query?coffee=900&water=9999")
+                guard let requestUrl = url else { fatalError() }
+
+                // Prepare URL Request Object
+                var request = URLRequest(url: requestUrl)
+                request.httpMethod = "POST"
+                 
+                // HTTP Request Parameters which will be sent in HTTP Request Body
+                let postString = "coffee=900&water=9999";
+
+                // Set HTTP Request Body
+                request.httpBody = postString.data(using: String.Encoding.utf8);
+
+                // Perform HTTP Request
+                let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+                        
+                        // Check for Error
+                        if let error = error {
+                            print("Error took place \(error)")
+                            return
+                        }
+                 
+                        // Convert HTTP Response Data to a String
+                        if let data = data, let dataString = String(data: data, encoding: .utf8) {
+                            print("Response data string:\n \(dataString)")
+                        }
+                }
+                task.resume()
+                // What to perform
+            }) {
+                Text("Send!")
+                    .background(Color.purple)
+                    .foregroundColor(.white)
+                    .font(.title)
+                // How the button looks like
+            }
             VStack{
                 HStack {
                     BarView(value: CGFloat(servingSize/5 * acidity), label:"1")
