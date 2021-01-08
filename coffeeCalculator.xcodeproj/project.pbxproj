@@ -17,6 +17,9 @@
 		F630CF4D259E956900493322 /* ContactDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F630CF4C259E956900493322 /* ContactDetail.swift */; };
 		F630CF5225A0E78500493322 /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F630CF5125A0E78500493322 /* BarView.swift */; };
 		F630CF6025A10AC200493322 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = F630CF5F25A10AC200493322 /* SwiftUICharts */; };
+		F6CA394A25A8EB18008E07D1 /* UserHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CA394925A8EB18008E07D1 /* UserHistoryView.swift */; };
+		F6CA394F25A90256008E07D1 /* CoffeeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CA394E25A90256008E07D1 /* CoffeeListView.swift */; };
+		F6CA395425A90267008E07D1 /* CoffeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CA395325A90267008E07D1 /* CoffeeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,9 @@
 		F630CF3C259E914E00493322 /* ContactRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRow.swift; sourceTree = "<group>"; };
 		F630CF4C259E956900493322 /* ContactDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetail.swift; sourceTree = "<group>"; };
 		F630CF5125A0E78500493322 /* BarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarView.swift; sourceTree = "<group>"; };
+		F6CA394925A8EB18008E07D1 /* UserHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHistoryView.swift; sourceTree = "<group>"; };
+		F6CA394E25A90256008E07D1 /* CoffeeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeListView.swift; sourceTree = "<group>"; };
+		F6CA395325A90267008E07D1 /* CoffeeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,9 @@
 		F630CEFD259D1D8F00493322 = {
 			isa = PBXGroup;
 			children = (
+				F6CA394E25A90256008E07D1 /* CoffeeListView.swift */,
+				F6CA395325A90267008E07D1 /* CoffeeView.swift */,
+				F6CA394925A8EB18008E07D1 /* UserHistoryView.swift */,
 				F630CF5125A0E78500493322 /* BarView.swift */,
 				F630CF08259D1D8F00493322 /* coffeeCalculator */,
 				F630CF1A259D1D9000493322 /* coffeeCalculatorTests */,
@@ -276,10 +285,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6CA394A25A8EB18008E07D1 /* UserHistoryView.swift in Sources */,
+				F6CA394F25A90256008E07D1 /* CoffeeListView.swift in Sources */,
 				F630CF0C259D1D9000493322 /* ContentView.swift in Sources */,
 				F630CF4D259E956900493322 /* ContactDetail.swift in Sources */,
 				F630CF0A259D1D9000493322 /* coffeeCalculatorApp.swift in Sources */,
 				F630CF3D259E914E00493322 /* ContactRow.swift in Sources */,
+				F6CA395425A90267008E07D1 /* CoffeeView.swift in Sources */,
 				F630CF5225A0E78500493322 /* BarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

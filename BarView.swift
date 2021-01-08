@@ -11,21 +11,23 @@ struct BarView: View{
 
     var value: CGFloat
     var maxHeight: CGFloat = 250
-    var cornerRadius: CGFloat = 1
+    var cornerRadius: CGFloat = 20
     var label: String
-    var scalar: CGFloat = 0.6
+    var scalar: CGFloat = 0.3
+    var barFill: Color = .blue;
     var body: some View {
-        VStack {
-            ZStack (alignment: .bottom) {
+        HStack {
+            Text(label)
+            ZStack (alignment: .leading) {
                 RoundedRectangle(cornerRadius: cornerRadius)
-                   .frame(width: 30, height: maxHeight).foregroundColor(.black)
-                VStack{
-                    Text(((value * 10.0).rounded()/10.0).description)
-                    RoundedRectangle(cornerRadius: cornerRadius)
-                        .frame(width: 45, height: value * scalar).foregroundColor(.blue)
-                    Text(label)
-                }
-            }
+                    .frame(width: maxHeight * scalar, height: 20)
+                    .foregroundColor(.white)
+                RoundedRectangle(cornerRadius: cornerRadius)
+                    .frame(width: value * scalar, height: 20)
+                    .foregroundColor(barFill)
         }
+            Text("+" + roundIt(x: Double(value)).description + "mL").foregroundColor(.blue)
+            Spacer()
     }
+}
 }
